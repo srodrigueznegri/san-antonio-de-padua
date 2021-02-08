@@ -4932,7 +4932,7 @@ button.bg-dark:focus {
     display: inline-flex !important; } }
 
 @media (min-width: 768px) {
-  .d-lg-none {
+  .d-md-none {
     display: none !important; }
   .d-md-inline {
     display: inline !important; }
@@ -7281,7 +7281,7 @@ a {
 strong, label {
   font-weight: bold; }
 
-iframe, .directivos, table {
+iframe, .directivos {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072);
   border-radius: 0.5rem; }
 
@@ -7387,17 +7387,22 @@ nav {
   border-radius: 0.8rem; }
 
 /* Niveles */
-table td, table th {
+.table thead th {
   border: 1px solid #7E7A7F;
   padding: 0.8rem;
-  text-align: center; }
-
-table th {
+  text-align: center;
+  vertical-align: middle;
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #6EC2C4;
   color: white;
   font-weight: bold; }
+
+.table tbody td {
+  border: 1px solid #7E7A7F;
+  padding: 0.8rem;
+  text-align: center;
+  vertical-align: middle; }
 
 /* Niveles - Inicial y Primario */
 .inicial, .primario {

@@ -131,7 +131,7 @@ strong, label {
 	font-weight: bold;
 }
 
-iframe, .directivos, table {
+iframe, .directivos {
 	box-shadow:
 	0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 	0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -264,18 +264,27 @@ nav {
 
 /* Niveles */
 
-table {
-	td, th {
-		border: 1px solid $grey;
-		padding: 0.8rem;
-		text-align: center;
+.table {
+	thead {
+		th {
+			border: 1px solid $grey;
+			padding: 0.8rem;
+			text-align: center;
+			vertical-align: middle;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			background-color: $light-green;
+			color: white;
+			font-weight: bold;
+		}
 	}
-	th {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		background-color: $light-green;
-		color: white;
-		font-weight: bold;
+	tbody {
+		td {
+			border: 1px solid $grey;
+			padding: 0.8rem;
+			text-align: center;
+			vertical-align: middle;
+		}
 	}
 }
 

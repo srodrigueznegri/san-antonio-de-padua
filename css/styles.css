@@ -4932,7 +4932,7 @@ button.bg-dark:focus {
     display: inline-flex !important; } }
 
 @media (min-width: 768px) {
-  .d-md-none {
+  .d-lg-none {
     display: none !important; }
   .d-md-inline {
     display: inline !important; }
